@@ -3,9 +3,12 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "Welcome"
+  text: "这是一个有趣的地方"
+  tagline: 分享知识、热爱生活
+  image:
+    src: /public/vae.jpeg
+    alt: VitePress
   actions:
     - theme: brand
       text: Markdown Examples
@@ -16,10 +19,10 @@ hero:
 
 features:
   - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: 111
   - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: 222
   - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: 333
 ---
 
