@@ -11,18 +11,11 @@ hero:
     alt: VitePress
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 进入主页
+      link: /bold
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 我的掘金
+      link: https://juejin.cn/user/4001878056646589
 
-features:
-  - title: Feature A
-    details: 111
-  - title: Feature B
-    details: 222
-  - title: Feature C
-    details: 333
 ---
 

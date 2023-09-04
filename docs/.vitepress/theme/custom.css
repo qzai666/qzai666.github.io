@@ -1,7 +1,7 @@
 /* .vitepress/theme/custom.css */
 :root {
-    --vp-c-brand-1: red;
-    --vp-c-brand-2: red;
+    /* --vp-c-brand-1: red;
+    --vp-c-brand-2: red; */
     --vp-font-family-base: cursive;
   }
   .image-src{
