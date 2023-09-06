@@ -175,7 +175,7 @@ export function testFun(){
 
 创建.npmrc 文件，设置默认的 npm 仓库地址
 
-```.npmrc
+```shell
 registry=http://verdaccio-test.joyread.cc/
 
 ```
