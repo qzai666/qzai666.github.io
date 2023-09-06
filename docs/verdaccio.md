@@ -1,5 +1,5 @@
 
-<p align="center"><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3ac0717481384f17a3ac7a90e3f1c61f~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p>
+![An image](/verdaccio/1.webp)
 
 ## 写在前面
 
@@ -29,14 +29,16 @@
 
 项目创建好之后终端输入 verdaccio 回车，就会自动在本地为你起一个服务。
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f59faa00358a4e94ac161599770933e8~tplv-k3u1fbpfcp-watermark.image?)
+![An image](/verdaccio/3.webp)
+
 
 图中两个红框分别对应项目的配置目录和服务的启动地址
 打开配置文件 config.yaml，在最后一行加上配置 `listen: 0.0.0.0:4873` 这样能保证其他本地域名的运行。
 
 打开链接 <http://localhost:4873/> 就可以看到 UI 界面。
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7d92a994424543769ee236f458753755~tplv-k3u1fbpfcp-watermark.image?)
+![An image](/verdaccio/2.webp)
+
 
 按照界面的内容就可以实现创建用户和发布功能。
 

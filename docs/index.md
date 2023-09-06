@@ -7,7 +7,7 @@ hero:
   text: "这是一个有趣的地方"
   tagline: 分享知识、热爱生活
   image:
-    src: /public/vae.jpeg
+    src: /public/home/vae.jpeg
     alt: VitePress
   actions:
     - theme: brand
