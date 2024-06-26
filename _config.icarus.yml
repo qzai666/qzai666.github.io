@@ -167,7 +167,7 @@ search:
 comment:
     type: disqus
     # Disqus shortname
-    shortname: 'Qzai blog'
+    shortname: 'Q仔 blog'
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
@@ -195,7 +195,7 @@ widgets:
         position: left
         type: profile
         # Author name
-        author: Qzai
+        author: Q仔
         # Author title
         author_title: 学习是终身的修养
         # Author's current location
