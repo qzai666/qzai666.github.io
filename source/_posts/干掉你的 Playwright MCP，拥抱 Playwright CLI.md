@@ -1,5 +1,5 @@
 ---
-title: 掉你的 Playwright MCP，拥抱 Playwright CLI
+title: 干掉你的 Playwright MCP，拥抱 Playwright CLI
 date: 2026-04-30 13:41:38
 tags:
 ---
