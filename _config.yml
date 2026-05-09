@@ -3,7 +3,7 @@ subtitle: 学习是终身的修养
 description: ''
 keywords: null
 author: Q仔
-language: en
+language: zh-CN
 timezone: ''
 url: https://qzai666.github.io/
 permalink: ':year/:month/:day/:title/'
@@ -58,6 +58,6 @@ pagination_dir: page
 include: null
 exclude: null
 ignore: null
-theme: icarus
+theme: fluid
 deploy:
   type: ''

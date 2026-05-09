@@ -1,0 +1,226 @@
+favicon: https://avatars.githubusercontent.com/u/139301147?v=4
+apple_touch_icon: https://avatars.githubusercontent.com/u/139301147?v=4
+
+dark_mode:
+  enable: false
+  default: dark
+
+color:
+  body_bg_color: "#050711"
+  body_bg_color_dark: "#050711"
+  navbar_bg_color: "rgba(5, 7, 17, .72)"
+  navbar_bg_color_dark: "rgba(5, 7, 17, .72)"
+  navbar_text_color: "#f8fbff"
+  navbar_text_color_dark: "#f8fbff"
+  subtitle_color: "#f8fbff"
+  subtitle_color_dark: "#f8fbff"
+  text_color: "#d7e4f2"
+  text_color_dark: "#d7e4f2"
+  sec_text_color: "#94a6bd"
+  sec_text_color_dark: "#94a6bd"
+  board_color: "rgba(10, 18, 37, .82)"
+  board_color_dark: "rgba(10, 18, 37, .82)"
+  post_text_color: "#d7e4f2"
+  post_text_color_dark: "#d7e4f2"
+  post_heading_color: "#f8fbff"
+  post_heading_color_dark: "#f8fbff"
+  post_link_color: "#25e7ff"
+  post_link_color_dark: "#25e7ff"
+  link_hover_color: "#ff3df2"
+  link_hover_color_dark: "#ff3df2"
+  link_hover_bg_color: "rgba(255, 61, 242, .12)"
+  link_hover_bg_color_dark: "rgba(255, 61, 242, .12)"
+  line_color: "rgba(37, 231, 255, .24)"
+  line_color_dark: "rgba(37, 231, 255, .24)"
+  scrollbar_color: "#25e7ff"
+  scrollbar_color_dark: "#25e7ff"
+  scrollbar_hover_color: "#ff3df2"
+  scrollbar_hover_color_dark: "#ff3df2"
+  button_bg_color: "transparent"
+  button_bg_color_dark: "transparent"
+  button_hover_bg_color: "rgba(37, 231, 255, .14)"
+  button_hover_bg_color_dark: "rgba(37, 231, 255, .14)"
+
+font:
+  font_size: 16px
+  font_family: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif'
+  letter_spacing: 0
+  code_font_size: 88%
+
+custom_css:
+  - /css/neon-cyberpunk.css
+
+fun_features:
+  typing:
+    enable: true
+    typeSpeed: 55
+    cursorChar: "_"
+    loop: true
+    scope:
+      - home
+  anchorjs:
+    enable: true
+    element: h1,h2,h3,h4,h5,h6
+    placement: left
+    visible: hover
+    icon: "#"
+  progressbar:
+    enable: true
+    height_px: 3
+    color: "#25e7ff"
+    options: { showSpinner: false, trickleSpeed: 100 }
+
+code:
+  copy_btn: true
+  language:
+    enable: true
+    default: "TEXT"
+  highlight:
+    enable: true
+    line_number: true
+    lib: "highlightjs"
+    highlightjs:
+      style: "dark"
+      style_dark: "dark"
+
+navbar:
+  blog_title: "Q仔--个人博客"
+  ground_glass:
+    enable: true
+    px: 8
+    alpha: 0.72
+  menu:
+    - { key: "首页", link: "/", icon: "iconfont icon-home-fill" }
+    - { key: "归档", link: "/archives/", icon: "iconfont icon-archive-fill" }
+    - { key: "分类", link: "/categories/", icon: "iconfont icon-category-fill" }
+    - { key: "标签", link: "/tags/", icon: "iconfont icon-tags-fill" }
+    - { key: "GitHub", link: "https://github.com/qzai666", icon: "iconfont icon-github-fill" }
+
+search:
+  enable: true
+  path: /local-search.xml
+  generate_path: /local-search.xml
+  field: post
+  content: true
+
+banner:
+  random_img: false
+  parallax: true
+  width_height_ratio: 0
+
+scroll_down_arrow:
+  enable: true
+  banner_height_limit: 70
+  scroll_after_turning_page: true
+
+footer:
+  content: '<span>NEON SYSTEM ONLINE</span> / <span>Qzai Cyber Blog</span>'
+  statistics:
+    enable: false
+
+index:
+  banner_img: /image/neon-cyberpunk.svg
+  banner_img_height: 100
+  banner_mask_alpha: 0.1
+  slogan:
+    enable: true
+    text:
+      - "Neon Code / Browser Automation / AI Engineering"
+      - "学习是终身的修养"
+  auto_excerpt:
+    enable: true
+  post_url_target: _self
+  post_meta:
+    date: true
+    category: true
+    tag: true
+  post_sticky:
+    enable: true
+    icon: "iconfont icon-top"
+
+post:
+  banner_img: /image/neon-cyberpunk.svg
+  banner_img_height: 58
+  banner_mask_alpha: 0.12
+  default_index_img:
+  meta:
+    author:
+      enable: false
+    date:
+      enable: true
+      format: "YYYY-MM-DD"
+    wordcount:
+      enable: true
+    min2read:
+      enable: true
+      awl: 2
+      wpm: 90
+    views:
+      enable: false
+  updated:
+    enable: false
+  toc:
+    enable: true
+    expand_all: true
+    placement: right
+    headingSelector: "h1,h2,h3,h4,h5,h6"
+    collapseDepth: 0
+  copyright:
+    enable: true
+    license: "BY-NC-SA"
+    author:
+      enable: true
+    post_date:
+      enable: true
+      format: "YYYY-MM-DD"
+    update_date:
+      enable: false
+  prev_next:
+    enable: true
+  image_caption:
+    enable: true
+  image_zoom:
+    enable: true
+  comments:
+    enable: false
+
+archive:
+  banner_img: /image/neon-cyberpunk.svg
+  banner_img_height: 50
+  banner_mask_alpha: 0.12
+
+category:
+  enable: true
+  banner_img: /image/neon-cyberpunk.svg
+  banner_img_height: 50
+  banner_mask_alpha: 0.12
+  order_by: "-length"
+  collapse_depth: 0
+  post_order_by: "-date"
+  post_limit: 10
+
+tag:
+  enable: true
+  banner_img: /image/neon-cyberpunk.svg
+  banner_img_height: 50
+  banner_mask_alpha: 0.12
+  tagcloud:
+    min_font: 15
+    max_font: 30
+    unit: px
+    start_color: "#25e7ff"
+    end_color: "#ff3df2"
+
+about:
+  banner_img: /image/neon-cyberpunk.svg
+  banner_img_height: 50
+  banner_mask_alpha: 0.12
+  avatar: https://avatars.githubusercontent.com/u/139301147?v=4
+  name: "Q仔"
+  intro: "Frontend / AI Coding / Automation"
+
+lazyload:
+  enable: true
+  loading_img: /img/loading.gif
+  onlypost: false
+  offset_factor: 2

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-label="Neon cyberpunk city background">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050711"/>
+      <stop offset="0.42" stop-color="#11103a"/>
+      <stop offset="1" stop-color="#080013"/>
+    </linearGradient>
+    <radialGradient id="pinkGlow" cx="68%" cy="20%" r="42%">
+      <stop offset="0" stop-color="#ff3df2" stop-opacity=".55"/>
+      <stop offset=".58" stop-color="#ff3df2" stop-opacity=".08"/>
+      <stop offset="1" stop-color="#ff3df2" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cyanGlow" cx="26%" cy="26%" r="48%">
+      <stop offset="0" stop-color="#25e7ff" stop-opacity=".52"/>
+      <stop offset=".56" stop-color="#25e7ff" stop-opacity=".08"/>
+      <stop offset="1" stop-color="#25e7ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="horizon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#25e7ff"/>
+      <stop offset=".5" stop-color="#ff3df2"/>
+      <stop offset="1" stop-color="#ffe65c"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="#25e7ff" stroke-opacity=".18" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <rect width="1920" height="1080" fill="url(#cyanGlow)"/>
+  <rect width="1920" height="1080" fill="url(#pinkGlow)"/>
+  <g opacity=".42">
+    <path d="M0 770H1920V1080H0Z" fill="#03040d"/>
+    <path d="M0 770H1920L1510 1080H410Z" fill="url(#grid)" opacity=".8"/>
+    <g stroke="#25e7ff" stroke-opacity=".2" stroke-width="2">
+      <path d="M960 770 140 1080"/>
+      <path d="M960 770 1780 1080"/>
+      <path d="M960 770 560 1080"/>
+      <path d="M960 770 1360 1080"/>
+    </g>
+    <g stroke="url(#horizon)" stroke-opacity=".34" stroke-width="2">
+      <path d="M0 828H1920"/>
+      <path d="M0 900H1920"/>
+      <path d="M0 996H1920"/>
+    </g>
+  </g>
+  <g fill="#050711">
+    <path d="M98 760V500h96v260h42V390h112v370h50V565h94v195h50V470h120v290Z"/>
+    <path d="M1230 760V420h112v340h52V535h96v225h42V360h130v400h58V515h102v245Z"/>
+    <path d="M720 760V350h94v410h42V250h130v510h60V430h104v330Z"/>
+  </g>
+  <g filter="url(#glow)" stroke-linecap="round">
+    <path d="M40 760H1880" stroke="url(#horizon)" stroke-width="4" opacity=".9"/>
+    <path d="M210 620H458" stroke="#25e7ff" stroke-width="5" opacity=".78"/>
+    <path d="M1290 590H1580" stroke="#ff3df2" stroke-width="5" opacity=".72"/>
+    <path d="M780 454H1098" stroke="#ffe65c" stroke-width="4" opacity=".64"/>
+    <circle cx="1455" cy="205" r="76" fill="none" stroke="#ff3df2" stroke-width="5" opacity=".72"/>
+    <circle cx="460" cy="210" r="58" fill="none" stroke="#25e7ff" stroke-width="4" opacity=".68"/>
+  </g>
+  <g opacity=".36" stroke="#fff" stroke-width="1">
+    <path d="M166 138h120m24 0h24M1420 112h160m22 0h40M825 150h110m20 0h60"/>
+    <path d="M118 188h60m30 0h170M1320 182h120m40 0h80"/>
+  </g>
+  <rect width="1920" height="1080" fill="#000" opacity=".1"/>
+</svg>
