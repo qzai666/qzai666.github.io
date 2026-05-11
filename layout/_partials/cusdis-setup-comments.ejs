@@ -1,0 +1,58 @@
+<% if (is_post() && theme.post.comments.enable && page.comments && theme.post.comments.type === 'cusdis') { %>
+  <article id="comments">
+    <% if (theme.cusdis && theme.cusdis.app_id) { %>
+      <%- partial('_partials/comments/cusdis') %>
+      <script type="text/javascript">
+        (function() {
+          function applyCusdisTheme() {
+            var iframe = document.querySelector('#cusdis_thread iframe');
+            if (!iframe) return false;
+
+            try {
+              var doc = iframe.contentDocument || iframe.contentWindow.document;
+              if (!doc || !doc.head) return false;
+              if (doc.getElementById('qzai-cusdis-theme')) return true;
+
+              var style = doc.createElement('style');
+              style.id = 'qzai-cusdis-theme';
+              style.textContent = [
+                'html, body { background: #050711 !important; color: #d7e4f2 !important; }',
+                'body { color-scheme: dark; }',
+                'input, textarea { background: rgba(4, 7, 18, .86) !important; color: #f8fbff !important; border: 1px solid rgba(37, 231, 255, .42) !important; }',
+                'input:focus, textarea:focus { outline: none !important; border-color: #25e7ff !important; box-shadow: 0 0 16px rgba(37, 231, 255, .18) !important; }',
+                'button { background: linear-gradient(135deg, #25e7ff, #ff3df2) !important; color: #050711 !important; border: 0 !important; font-weight: 700 !important; }',
+                'a { color: #25e7ff !important; }',
+                '.text-gray-500, .text-gray-600, .text-gray-700 { color: #94a6bd !important; }'
+              ].join('\n');
+              doc.head.appendChild(style);
+              if (doc.body) {
+                doc.body.style.background = '#050711';
+                doc.body.style.color = '#d7e4f2';
+              }
+              return true;
+            } catch (e) {
+              return false;
+            }
+          }
+
+          var retries = 0;
+          var timer = setInterval(function() {
+            retries += 1;
+            if (applyCusdisTheme() || retries > 20) {
+              clearInterval(timer);
+            }
+          }, 300);
+        })();
+      </script>
+    <% } else { %>
+      <section class="comment-system">
+        <div>
+          <p class="comment-system__eyebrow">Cusdis Comments</p>
+          <h2 class="comment-system__title">留言</h2>
+          <p class="comment-system__desc">评论系统已切换到 Cusdis。Cusdis 免费，访客留言不需要登录；填入 Cusdis 后台生成的 app_id 后即可开放。</p>
+        </div>
+        <a class="comment-system__action" href="https://cusdis.com/dashboard" target="_blank" rel="noopener">配置 Cusdis</a>
+      </section>
+    <% } %>
+  </article>
+<% } %>

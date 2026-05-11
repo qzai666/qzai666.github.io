@@ -182,7 +182,13 @@ post:
   image_zoom:
     enable: true
   comments:
-    enable: false
+    enable: true
+    type: cusdis
+
+cusdis:
+  host: https://cusdis.com
+  app_id: 2b50b6c2-acb0-48c4-84b1-a045f6141711
+  lang: zh-cn
 
 archive:
   banner_img: /image/neon-cyberpunk.svg

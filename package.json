@@ -6,7 +6,7 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "dev": "hexo server"
+    "dev": "hexo server -p 4020"
   },
   "hexo": {
     "version": "7.2.0"
@@ -26,5 +26,8 @@
     "hexo-theme-fluid": "^1.9.9",
     "hexo-theme-icarus": "^6.1.0",
     "hexo-theme-landscape": "^1.0.0"
+  },
+  "devDependencies": {
+    "hexo-browsersync": "^0.3.0"
   }
 }

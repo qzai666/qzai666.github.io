@@ -129,7 +129,8 @@ body::after {
 .post,
 .archive-list,
 .category-list,
-.tag-cloud {
+.tag-cloud,
+#comments {
   color: var(--neon-text);
 }
 
@@ -139,7 +140,8 @@ body::after {
 .toc,
 .category-list,
 .tag-cloud,
-.archive-list {
+.archive-list,
+#comments {
   border: 1px solid var(--neon-border);
   border-radius: 14px;
   background: linear-gradient(180deg, rgba(12, 20, 42, 0.82), rgba(7, 10, 24, 0.86)) !important;
@@ -149,13 +151,15 @@ body::after {
   backdrop-filter: blur(16px);
 }
 
-.post-item {
+.post-item,
+#comments {
   position: relative;
   overflow: hidden;
 }
 
 .post-item::before,
-.board::before {
+.board::before,
+#comments::before {
   content: "";
   position: absolute;
   left: 18px;
@@ -164,6 +168,80 @@ body::after {
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--neon-cyan), var(--neon-pink), transparent);
   opacity: 0.7;
+}
+
+#comments {
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+#comments noscript {
+  color: var(--neon-muted);
+}
+
+.comment-system {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.comment-system__eyebrow {
+  margin: 0 0 0.35rem;
+  color: var(--neon-cyan);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.comment-system__title {
+  margin: 0;
+  color: var(--neon-title);
+  font-size: 1.6rem;
+  line-height: 1.2;
+  text-shadow: 0 0 18px rgba(37, 231, 255, 0.28);
+}
+
+.comment-system__desc {
+  margin: 0.75rem 0 0;
+  color: var(--neon-muted);
+}
+
+.comment-system__action {
+  display: inline-flex;
+  min-height: 2.6rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1.05rem;
+  color: #050711 !important;
+  border: 1px solid rgba(37, 231, 255, 0.75);
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--neon-cyan), var(--neon-pink));
+  box-shadow: 0 0 22px rgba(37, 231, 255, 0.28);
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+
+.comment-system__action:hover {
+  filter: brightness(1.08);
+}
+
+#cusdis_thread,
+.cusdis {
+  color-scheme: dark;
+}
+
+@media (max-width: 767px) {
+  .comment-system {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .comment-system__action {
+    width: 100%;
+  }
 }
 
 .post-item:hover {
