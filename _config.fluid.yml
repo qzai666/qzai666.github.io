@@ -181,6 +181,9 @@ post:
     enable: true
   image_zoom:
     enable: true
+  mermaid:
+    enable: true
+    specific: true
   comments:
     enable: true
     type: cusdis
